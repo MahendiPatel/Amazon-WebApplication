@@ -1,0 +1,11 @@
+{
+  "sit": {
+    "executeTest":[
+      {
+        "url": "https://www.amazon.com/",
+        "productName":"Logitech MK335 Wireless Keyboard and Mouse Combo - Black/Silver",
+        "price" : "$24.99"
+      }
+  ]
+  }
+}

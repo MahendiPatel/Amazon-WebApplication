@@ -1,0 +1,28 @@
+{
+
+  "projectSettings": {
+    "projectName": "Amazon WebSite",
+    "projectVersion": "1.0.0"
+  },
+  "testSettings": {
+    "runOn": "Chrome",
+    "runAt": "local",
+    "runFullScreen": true,
+    "chromeDriverPath": "\\C:\\Binaries\\chromedriver.exe",
+    "firefoxDriverPath": "\\C:\\Binaries\\geckodriver.exe",
+    "ieDriverPath": "",
+    "takeScreenshot": true,
+    "takeScreenshotFor": "Fail",
+    "driverWaitTime": 10,
+    "pageLoadWaitTime": 20,
+    "conditionalWaitTime": 30,
+    "environment": "sit"
+  },
+  "emailSettings": {
+    "emailSubject": "Automation Email Report",
+    "emailSender": "abc@ac.com",
+    "emailTo": "mahendi.mpatel@gmail.com",
+    "emailCC": "mahndi.mpatel@gmail.com",
+    "sendEmail": true
+  }
+}
