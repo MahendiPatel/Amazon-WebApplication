@@ -7,13 +7,13 @@
       "id": "nav-search-submit-button"
     },
     "prod": {
-      "xpath": "//img[@src='https://m.media-amazon.com/images/I/61VLSqFG6DL._AC_UY218_.jpg']"
+      "xpath": "//img[@src='https://m.media-amazon.com/images/I/719LFu+MawL._AC_UY218_.jpg']"
     },
     "title": {
       "xpath": "//span[@id='productTitle']"
     },
     "price": {
-      "xpath": "//*[@id=\"corePrice_desktop\"]/div/table/tbody/tr[2]/td[2]/span[1]/span[2]"
+      "xpath": "//*[@id=\"corePrice_desktop\"]/div//span[1]/span[2]"
     }
   }
 }

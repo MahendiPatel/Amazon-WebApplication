@@ -47,12 +47,12 @@ public class searchPage extends WebActionUtils {
     //it also fetched the price from that page and assert that it will also match with provided TestData.
     public void selectProdAndCheckPrice(String productName,String price) throws Exception
     {
-        WebElement prod = driver.findElement(By.xpath("//img[@src='https://m.media-amazon.com/images/I/61VLSqFG6DL._AC_UY218_.jpg']"));
+        WebElement prod = driver.findElement(By.xpath("//img[@src='https://m.media-amazon.com/images/I/719LFu+MawL._AC_UY218_.jpg']"));
         prod.click();
         WebElement actualTitle= driver.findElement(By.xpath("//span[@id='productTitle']"));
         Assert.assertEquals(actualTitle.getText(),productName);
         System.out.println("You have selected the correct product:");
-        WebElement actualPrice= driver.findElement(By.xpath("//*[@id=\"corePrice_desktop\"]/div/table/tbody/tr[2]/td[2]/span[1]/span[2]"));
+        WebElement actualPrice= driver.findElement(By.xpath("//*[@id=\"corePrice_desktop\"]/div//span[1]/span[2]"));
         Assert.assertEquals(actualPrice.getText(),price);
         System.out.println("Price is matched with expected price:"+actualPrice.getText());
     }
