@@ -20,23 +20,31 @@ public class searchPage extends WebActionUtils {
         this.driver = driver;
     }
 
-
+    //this function will search for searchBox and click on it.
     public void navigateToSearchBox() throws Exception {
         clickOn("searchBox");
         Thread.sleep(2000);
     }
+
+    //this function will call the navigateToSearchBox() and type "keyboard" into searchBox.
     public void searchForProduct() throws Exception {
         navigateToSearchBox();
         typeInto("searchBox","keyboard");
         clickOn("searchBtn");
         Thread.sleep(2000);
     }
+
+    //this function will press PAGE_DOWN keys 2 time to scroll for 2 times.
     public void scroll2Times() throws Exception {
         Actions at = new Actions(driver);
         at.sendKeys(Keys.PAGE_DOWN).build().perform();
         at.sendKeys(Keys.PAGE_DOWN).build().perform();
         Thread.sleep(3000);
     }
+
+    //this function will locate a product "prod" -> click on the product and fetch the name of product.
+    //assert that the fetched name is same as the name provided to the TestData.
+    //it also fetched the price from that page and assert that it will also match with provided TestData.
     public void selectProdAndCheckPrice(String productName,String price) throws Exception
     {
         WebElement prod = driver.findElement(By.xpath("//img[@src='https://m.media-amazon.com/images/I/61VLSqFG6DL._AC_UY218_.jpg']"));

@@ -28,7 +28,7 @@ public class practiceTest {
     public WebDriver driver;
     public LocateBy locateBy;
     public DriverManager driverManager;
-    //static String url="https://www.amazon.com/";
+
 
     @BeforeSuite
     public void beforeAnythingElse() throws Exception {
@@ -46,7 +46,7 @@ public class practiceTest {
     }
 
     @Test(dataProviderClass = DataProviderUtils.class, dataProvider = "jsonDataProvider")
-   @ITestDataProvider(value = "executeTest=url,productName,price")
+    @ITestDataProvider(value = "executeTest=url,productName,price")
     public void executeTest(String url,String productName, String price) throws Exception {
         landingPage LandingPage = new landingPage(driver);
         LandingPage.navigateToWebsite(url);
